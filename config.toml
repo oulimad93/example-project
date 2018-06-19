@@ -1,0 +1,3 @@
+baseURL = "/"
+languageCode = "fr-FR"
+title = "My New Hugo Site"

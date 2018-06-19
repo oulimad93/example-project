@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+
+media_folder: "static/img"
+public_folder: "img"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Page d'accueil"
+        name: "home"
