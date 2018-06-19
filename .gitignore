@@ -4,3 +4,4 @@ public/
 .cache/
 static/css/*
 static/js/*
+resources/
