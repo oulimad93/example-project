@@ -1,0 +1,22 @@
+{
+  "name": "example-project",
+  "version": "0.0.0",
+  "description": "Hugo + NetlifyCMS = <3",
+  "repository": "git@gitlab.com:gostwow/example-project.git",
+  "author": "Oussama Bennaci <ox.ouss@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel watch assets/css/main.scss assets/js/app.js --out-dir=static",
+    "compile": "parcel build assets/css/main.scss assets/js/app.js --out-dir=static"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "node-sass": "^4.9.0"
+  }
+}
