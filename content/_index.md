@@ -1,0 +1,3 @@
+---
+some_variable: some_value
+---
