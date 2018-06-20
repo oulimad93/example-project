@@ -2,10 +2,11 @@
   <section class="container">
     <div class="row">
       <div class="col">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque deleniti tempora fugiat maiores, expedita nulla eius optio deserunt dolores perspiciatis recusandae aliquam aperiam, doloribus earum. Nulla consequuntur nobis iusto consectetur.
+        <p class="h2">About us</p>
+        <div class="text-secondary">{{ .Content | markdownify }}</div>
       </div>
       <div class="col">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, minima in quis natus iste voluptates dignissimos alias ad numquam recusandae maiores corrupti? Omnis culpa id est? Expedita praesentium facilis sint.
+        <img src="{{ .Params.intro_image }}" alt="" class="img-fluid rounded">
       </div>
     </div>
   </section>

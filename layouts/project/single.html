@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="py-5">
+    <section class="container">
+      <h1>{{ .Params.name }}</h1>
+      {{ if (len .Content) gt 0 }}
+        <div class="mb-4">
+            {{ .Content | markdownify }}
+        </div>
+      {{ end }}
+    </section>
+  </div>
+{{ end }}
