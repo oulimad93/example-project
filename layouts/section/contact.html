@@ -15,7 +15,11 @@
           </span>
           <div class="media-body">
             <p class="text-secondary mb-1">Appelez-nous au</p>
-            <p class="h5 mb-0">{{ .Params.phone }}</p>
+            <ul class="list-unstyled">
+              {{ range .Params.phones }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
           </div>
         </div>
         <div class="media align-items-center mb-5">
@@ -24,7 +28,11 @@
           </span>
           <div class="media-body">
             <p class="text-secondary mb-1">Adresse electronique</p>
-            <p class="h5 mb-0">{{ .Params.email }}</p>
+            <ul class="list-unstyled">
+              {{ range .Params.emails }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
           </div>
         </div>
         <div class="media align-items-center">
@@ -33,7 +41,11 @@
           </span>
           <div class="media-body">
             <p class="text-secondary mb-1">Adresse postale</p>
-            <p class="h5 mb-0">{{ .Params.address }}</p>
+            <ul class="list-unstyled">
+              {{ range .Params.addresses }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
           </div>
         </div>
       </div>

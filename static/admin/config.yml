@@ -4,6 +4,9 @@ backend:
 media_folder: "static/img"
 public_folder: "img"
 
+editor:
+  preview: false
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -11,3 +14,41 @@ collections:
       - file: "content/_index.md"
         label: "Page d'accueil"
         name: "home"
+        fields:
+          - { label: Intro, name: body, widget: markdown }
+          - { label: "Image intro", name: intro_image, widget: image }
+          - label: "Images slider"
+            name: carousel_images
+            widget: list
+            field: { label: " ", name: image, widget: image }
+      
+      - file: "content/contact/_index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - label: "N Téléphone"
+            name: phones
+            widget: list
+            field: { label: "N Téléphone", name: phone, widget: string }
+
+          - label: "Emails"
+            name: emails
+            widget: list
+            field: { label: "Adresse Email", name: email, widget: string }
+            
+          - label: "Adresses Postales"
+            name: adresses
+            widget: list
+            field: { label: "Adresse", name: address, widget: string }
+
+  - name: "Projects"
+    label: "Projets"
+    label_singular: "Projet"
+    folder: "content/project"
+    create: true,
+    delete: true
+    fields:
+      - { label: Nom du projet, name: name, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: description, name: description, widget: text }
+      - { label: Texte, name: body, widget: markdown }
