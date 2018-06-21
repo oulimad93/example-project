@@ -1,19 +1,5 @@
-import {
-  // Util,
-  // Alert,
-  // Button,
-  Carousel
-  // Collapse,
-  // Dropdown,
-  // Modal,
-  // Popover,
-  // Scrollspy,
-  // Tab,
-  // Tooltip
-} from 'bootstrap'
-
 const $ = window.$ = window.jQuery = require('jquery')
-
+require('bootstrap')
 require('slick-carousel')
 
 $(document).ready(() => {

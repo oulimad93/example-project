@@ -1,11 +1,61 @@
 {{ define "main" }}
-  <div class="py-5">
-    <section class="container">
-      {{ if (len .Content) gt 0 }}
-        <div class="mb-4">
-            {{ .Content | markdownify }}
+<div class="py-5 border-bottom">
+  <section class="container">
+    <h1 class="text-center mb-3">Contactez nous</h1>
+    <div class="text-center w-50 mx-auto text-secondary">{{ .Content | markdownify }}</div>
+  </section>
+</div>
+<div class="py-5">
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <div class="media align-items-center mb-5">
+          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+            <i class="material-icons align-middle">phone</i>
+          </span>
+          <div class="media-body">
+            <p class="text-secondary mb-1">Appelez-nous au</p>
+            <p class="h5 mb-0">{{ .Params.phone }}</p>
+          </div>
         </div>
-      {{ end }}
-    </section>
-  </div>
+        <div class="media align-items-center mb-5">
+          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+            <i class="material-icons align-middle">email</i>
+          </span>
+          <div class="media-body">
+            <p class="text-secondary mb-1">Adresse electronique</p>
+            <p class="h5 mb-0">{{ .Params.email }}</p>
+          </div>
+        </div>
+        <div class="media align-items-center">
+          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+            <i class="material-icons align-middle">map</i>
+          </span>
+          <div class="media-body">
+            <p class="text-secondary mb-1">Adresse postale</p>
+            <p class="h5 mb-0">{{ .Params.address }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <form class="card shadow border-0 p-4" netlify>
+          <div class="form-group">
+            <label for="email">Nom et prénom</label>
+            <input type="email" class="form-control" id="name" placeholder="" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea class="form-control" id="message" placeholder="" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
 {{ end }}
