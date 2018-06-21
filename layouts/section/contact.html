@@ -9,45 +9,45 @@
   <section class="container">
     <div class="row">
       <div class="col">
+        {{ with .Params.phones }}
         <div class="media align-items-center mb-5">
-          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
-            <i class="material-icons align-middle">phone</i>
-          </span>
-          <div class="media-body">
-            <p class="text-secondary mb-1">Appelez-nous au</p>
-            <ul class="list-unstyled">
-              {{ range .Params.phones }}
-              <li>{{ . }}</li>
-              {{ end }}
-            </ul>
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+              <i class="material-icons align-middle">phone</i>
+            </span>
+            <div class="media-body">
+              <p class="text-secondary mb-1">Appelez-nous au</p>
+              <ul class="list-unstyled">
+                {{ range . }} <li>{{ . }}</li> {{ end }}
+              </ul>
+            </div>
           </div>
-        </div>
+        {{ end }}
+        {{ with .Params.emails }}
         <div class="media align-items-center mb-5">
-          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
-            <i class="material-icons align-middle">email</i>
-          </span>
-          <div class="media-body">
-            <p class="text-secondary mb-1">Adresse electronique</p>
-            <ul class="list-unstyled">
-              {{ range .Params.emails }}
-              <li>{{ . }}</li>
-              {{ end }}
-            </ul>
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+              <i class="material-icons align-middle">email</i>
+            </span>
+            <div class="media-body">
+              <p class="text-secondary mb-1">Adresse Email</p>
+              <ul class="list-unstyled">
+                {{ range . }} <li>{{ . }}</li> {{ end }}
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="media align-items-center">
-          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
-            <i class="material-icons align-middle">map</i>
-          </span>
-          <div class="media-body">
-            <p class="text-secondary mb-1">Adresse postale</p>
-            <ul class="list-unstyled">
-              {{ range .Params.addresses }}
-              <li>{{ . }}</li>
-              {{ end }}
-            </ul>
+        {{ end }}
+        {{ with .Params.addresses }}
+        <div class="media align-items-center mb-5">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+              <i class="material-icons align-middle">map</i>
+            </span>
+            <div class="media-body">
+              <p class="text-secondary mb-1">Visitez nous</p>
+              <ul class="list-unstyled">
+                {{ range . }} <li>{{ . }}</li> {{ end }}
+              </ul>
+            </div>
           </div>
-        </div>
+        {{ end }}
       </div>
       <div class="col">
         <form class="card shadow border-0 p-4" method="POST" name="contact-form" netlify>
