@@ -19,7 +19,13 @@
     {{ range .Data.Pages }}
       <div class="px-4 py-5">
         <article class="card border-0 shadow">
-          <img src="{{ .Params.image }}" alt="" class="card-img-top">
+          <!-- {{ $name := .Params.image }} -->
+          {{ $imgs := .Site.GetPage "section" "images" }}
+          {{ $imgs := $imgs.Resources.Match $name }}
+          {{ range $index, $el := $imgs }}
+          {{ $resized := $el.Resize "300x" }}
+          <img src="{{ $resized.RelPermalink }}" alt="" class="card-img-top">
+          {{ end }}
           <div class="card-body">
             <h4 class="card-title">{{ .Params.name }}</h4>
             <p class="card-text">Some description</p>

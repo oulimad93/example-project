@@ -1,4 +1,13 @@
 {{ define "main" }}
+
+
+{{ with .Site.GetPage "section" "images" }}
+  <h2>{{ .Title }}</h2>
+  {{ $resources := .Resources.Match "linkomweb.png" }}
+  {{ $resources }}
+{{ end }}
+
+
   {{ partial "carousel" . }}
   {{ partial "intro" . }}
   {{ partial "projects" . }}

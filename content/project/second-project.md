@@ -1,6 +1,6 @@
 ---
 name: FooBar
-image: /img/nature2.jpg
+image: nature2.jpg
 description: >-
   Some description over here
 ---
