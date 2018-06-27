@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "static/img"
-public_folder: "img"
+public_folder: "/img"
 
 editor:
   preview: false
@@ -20,8 +20,10 @@ collections:
           - label: "Images slider"
             name: carousel_images
             widget: list
-            field: { label: " ", name: image, widget: image }
-      
+            fields:
+              - { label: " ", name: image, widget: image }
+              - { label: "Texte du slide", name: text, widget: text, required: false}
+
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "contact"
@@ -35,7 +37,7 @@ collections:
             name: emails
             widget: list
             field: { label: "Adresse Email", name: email, widget: string }
-            
+
           - label: "Adresses Postales"
             name: adresses
             widget: list
