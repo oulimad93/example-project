@@ -19,7 +19,7 @@ collections:
           - { label: "Image intro", name: "intro_image", widget: "image" }
           - label: "Images slider"
             name: "carousel_images"
-            widget: list
+            widget: "list"
             fields:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Texte du slide", name: "text", widget: "text", required: false}
@@ -52,7 +52,7 @@ collections:
     create: true,
     delete: true
     fields:
-      - { label: "Nom du projet", name: "name", widget: "string" }
+      - { label: "Nom du projet", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "description", name: "description", widget: "text" }
       - { label: "Texte", name: "body", widget: "markdown" }
