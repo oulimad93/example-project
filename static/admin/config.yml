@@ -15,14 +15,14 @@ collections:
         label: "Page d'accueil"
         name: "home"
         fields:
-          - { label: Intro, name: body, widget: markdown }
-          - { label: "Image intro", name: intro_image, widget: image }
+          - { label: "Intro", name: "body", widget: "markdown" }
+          - { label: "Image intro", name: "intro_image", widget: "image" }
           - label: "Images slider"
-            name: carousel_images
+            name: "carousel_images"
             widget: list
             fields:
-              - { label: " ", name: image, widget: image }
-              - { label: "Texte du slide", name: text, widget: text, required: false}
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Texte du slide", name: "text", widget: "text", required: false}
 
       - file: "content/contact/_index.md"
         label: "Contact"
@@ -31,19 +31,19 @@ collections:
         delete: true
         fields:
           - label: "N Téléphone"
-            name: phones
-            widget: list
-            field: { label: "N Téléphone", name: phone, widget: string }
+            name: "phones"
+            widget: "list"
+            field: { label: "N Téléphone", name: "phone", widget: "string" }
 
           - label: "Emails"
-            name: emails
-            widget: list
-            field: { label: "Adresse Email", name: email, widget: string }
+            name: "emails"
+            widget: "list"
+            field: { label: "Adresse Email", name: "email", widget: "string" }
 
           - label: "Adresses Postales"
-            name: adresses
-            widget: list
-            field: { label: "Adresse", name: address, widget: string }
+            name: "adresses"
+            widget: "list"
+            field: { label: "Adresse", name: "address", widget: "string" }
 
   - name: "Projects"
     label: "Projets"
@@ -52,7 +52,7 @@ collections:
     create: true,
     delete: true
     fields:
-      - { label: Nom du projet, name: name, widget: string }
-      - { label: Image, name: image, widget: image }
-      - { label: description, name: description, widget: text }
-      - { label: Texte, name: body, widget: markdown }
+      - { label: "Nom du projet", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "description", name: "description", widget: "text" }
+      - { label: "Texte", name: "body", widget: "markdown" }
