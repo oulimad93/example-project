@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 
-media_folder: "static/img"
+media_folder: "/static/img"
 public_folder: "/img"
 
 editor:
@@ -27,6 +27,8 @@ collections:
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "contact"
+        create: true,
+        delete: true
         fields:
           - label: "N Téléphone"
             name: phones
