@@ -62,3 +62,13 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "description", name: "description", widget: "text" }
       - { label: "Texte", name: "body", widget: "markdown" }
+
+  - name: "client"
+    label: "Clients"
+    label_singular: "Client"
+    folder: "content/client"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "hidden", default: "client"}

@@ -1,4 +1,4 @@
 baseURL = "/"
 languageCode = "fr-FR"
-title = "My New Hugo Site"
+title = "Ide-Net"
 disableKinds = ["taxonomyTerm"]
