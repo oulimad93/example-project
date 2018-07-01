@@ -1,6 +1,7 @@
 ---
 name: FooBar
-image: nature.jpg
+type: project
+image: /img/nature.jpg
 description: >-
   Some description over here
 ---

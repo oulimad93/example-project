@@ -1,11 +1,12 @@
-<div class="py-5">
+<div class="py-70 white-bg">
   <section class="container">
     <div class="row">
-      <div class="col">
-        <p class="h2">About us</p>
-        <div class="text-secondary">{{ .Content | markdownify }}</div>
+      <div class="col-md-6">
+        <p class="h2 section-title">About us</p>
+        <div class="text-secondary intro-paragraph">{{ .Content | markdownify }}</div>
+        <a href="https://ide-net.com/nos-references" class="button mt-55">En Savoir Plus &raquo;</i></a>
       </div>
-      <div class="col">
+      <div class="col-md-6 p-4">
         <img src="{{ .Params.intro_image }}" alt="" class="img-fluid rounded shadow-sm">
       </div>
     </div>

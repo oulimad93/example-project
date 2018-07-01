@@ -1,5 +1,5 @@
 ---
-intro_image: /img/nature2.jpg
+intro_image: /img/nature2_2.jpg
 carousel_images:
   - /img/nature.jpg
   - /img/nature2.jpg

@@ -1,7 +1,7 @@
 ---
 phones:
-  - "0557479303"
-  - "0557479304"
+  - "0557 47 93 03"
+  - "0557 47 93 04"
 addresses:
   - "10 Rue Harouni Bouziane, Oran"
 emails:

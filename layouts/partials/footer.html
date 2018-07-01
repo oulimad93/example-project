@@ -1,17 +1,110 @@
-<footer class="border-top">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col">
-        <p class="h5">{{ .Site.Title }}</p>
-      </div>
+<footer class="white-bg pt-70 border-top">
+  <div class="container pl-lg-0 pr-lg-0 pb-30">
+   <div class="row">
+    <div class="col-md-4 logo-col">
+     <div class="logo">
+       <img src="/img/logo.png" alt="" class="footer-logo">
+       <!-- <p class="big mt-50">Leader de la géolocalisation dans votre région</p> -->
+
     </div>
   </div>
-  <div class="container copyright text-center py-3 text-sm bg-white">
-    Copyright 2018 &copy; {{ .Site.Title }} &mdash; Tous droits réservés.
-    Réalisé par
-    <a href="http://linkomweb.com" class="font-weight-bold no-decoration">
-      <span>Linkom</span>
-      <img src="/img/linkomweb.png" alt="" style="width: 24px" class="align-middle">
-    </a>
+  <div class="col-md-4">
+  <h4 class="text-primary">Coordonnées</h4>
+
+  {{ with .Site.GetPage "section" "contact" }}
+
+    <!-- <ul class="footerinfo list-unstyled" style="padding-left: 0">
+      <li><i class="icon-location icontact"></i>
+        <span>
+          {{ with .Params.addresses }}
+            {{ range . }} {{ . }}<br> {{ end }}
+          {{ end }}
+        </span>
+      </li>
+      <li>
+        <i class="icon-phone icontact"></i><span>
+          {{ with .Params.phones }}
+            {{ range . }} {{ . }}<br> {{ end }}
+          {{ end }}
+         </span>
+      </li>
+      <li>
+        <i class="icon-mail-line icontact"></i><span>
+          {{ with .Params.emails }}
+            {{ range . }} {{ . }}<br> {{ end }}
+          {{ end }}
+         </span>
+      </li>
+    </ul> -->
+        {{ with .Params.addresses }}
+        <div class="media align-items-center mb-0">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+              <i class="material-icons align-middle">location_on</i>
+            </span>
+            <div class="media-body mt-3">
+              <ul class="list-unstyled">
+                {{ range . }} <li>{{ . }}</li> {{ end }}
+              </ul>
+            </div>
+          </div>
+        {{ end }}
+        {{ with .Params.phones }}
+        <div class="media align-items-center mb-0">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+              <i class="material-icons align-middle">phone</i>
+            </span>
+            <div class="media-body mt-3">
+              <ul class="list-unstyled">
+                {{ range . }} <li>{{ . }}</li> {{ end }}
+              </ul>
+            </div>
+          </div>
+        {{ end }}
+        {{ with .Params.emails }}
+        <div class="media align-items-center mb-0">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+              <i class="material-icons align-middle">email</i>
+            </span>
+            <div class="media-body mt-3">
+              <ul class="list-unstyled">
+                {{ range . }} <li>{{ . }}</li> {{ end }}
+              </ul>
+            </div>
+          </div>
+        {{ end }}
+    {{ end }}
+
   </div>
+  <div class="col-md-4">
+    <h4 class="text-primary">Rejoignez nous</h4>
+    <p class="">Restons en contact! Abonnez-vous à nos pages sur les réseaux sociaux</p>
+
+    <ul class="social-list">
+        <li>
+          <a href="" target="_blank">
+            <img width="26" height="26" src="/img/fb.svg" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img width="26" height="26" src="/img/linkedin.png" alt="linkedin">
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img width="26" height="26" src="/img/twitter.png" alt="twitter">
+          </a>
+        </li>
+      </ul>
+  </div>
+
+</div>
+</div>
+<div class="footer-copyright container block pl-lg-0 pr-lg-0">
+ Copyright 2018 © <a href="" title="">IDE-NET Géolocalisation </a>
+ - Tous droits réservés.
+ <div class="float-right">
+   Siteweb réalisé par  <a href="http://www.linkomweb.com" title="Linkom, l'agence web!" target="_blank"><b>Linkom</b><img class="logo-linkom ml-10" src="/img/logo-linkomweb.png" alt="Linkom, l'agence web!" width="20"></a>
+ </div>
+</div>
 </footer>

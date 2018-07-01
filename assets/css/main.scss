@@ -43,10 +43,13 @@
 
  @import "node_modules/slick-carousel/slick/slick.scss";
 //  @import "node_modules/slick-carousel/slick/slick-theme.scss";
- 
+
  // Carousel size for the carousel in the landing page
+h1, h2, h3, h4, h5 {
+    font-family : "Didact Gothic", sans-serif;
+}
 .carousel-homepage .carousel-item > * {
-  height: 400px;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -68,4 +71,237 @@
 
 .no-decoration:hover {
   text-decoration: none
+}
+
+.card-text {
+  height:100px;
+}
+p.card-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 300;
+}
+.card a {
+    font-family: 'roboto',sans-serif;
+    font-weight: 500 !important;
+    font-size: 15px;
+}
+h4.card-title {
+
+}
+.section-intro {
+    font-family: 'roboto',sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+    width:60%;
+}
+.white-bg {
+    background-color: $white;
+}
+.section-title {
+    color:$primary;
+    font-family : "Didact Gothic", sans-serif;
+    font-size: 38px;
+    line-height: 45.6px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.clients-section {
+     padding-top: 70px;
+     padding-bottom: 70px;
+}
+.client-logo img  {
+    max-height: 75px;
+    max-width: 130px;
+}
+.mt-50 {
+    margin-top: 50px !important;
+}
+.button {
+    border-radius: 4px;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 14px !important;
+    padding-right: 50px !important;
+    padding-bottom: 14.5px !important;
+    padding-left: 40px !important;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    background: $primary;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    min-width: 140px;
+    margin: 0;
+    margin-top: 0px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 0 12px 18px -6px rgba(0,0,0,.3);
+    border: none;
+}
+.button:hover {
+    background: #376aab;
+    color: #fff;
+}
+.mt-55 {
+    margin-top: 55px !important;
+}
+.link i, .button i {
+    position: relative;
+    top: 2.5px;
+    left: 4px;
+    transform: rotate(180deg);
+    font-size: 13px;
+    transition: .3s;
+}
+a {
+    font-weight: 500 !important;
+}
+a:hover {
+    color:$white;
+    text-decoration: none;
+}
+.footer-logo {
+    width: 60%;
+    margin-left: 00%;
+}
+/* .footer-top-wrap {
+    height: 80px;
+    display: flex;
+
+} */
+/* .footer-link-wrap {
+    margin: auto 0;
+    width: 70%;
+    font-size: 1.125rem;
+} */
+/* .footer-link {
+    color: #818a9e;
+    transition: color .6s;
+    font-weight: 700;
+    font-size: .85em;
+    letter-spacing: .02em;
+    margin-right: 25px;
+} */
+footer .social-list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+footer .social-list li {
+    display: inline-block;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    margin: 0 5px 0 0;
+    background: transparent;
+    color: rgba(239, 248, 251, 0.7);
+}
+footer .social-list li a {
+    font-size: 18px;
+    color: #818a9e;
+}
+footer h4 {
+    margin-bottom:25px;
+}
+footer .footerinfo li {
+    margin-bottom: 10px;
+    color:#666;
+}
+
+footer p {
+    color:#666;
+}
+.footer-copyright {
+    margin-top: 50px;
+    min-height: 55px;
+    line-height: 13px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #dfe7ef;
+}
+.footer-copyright a {
+    color: #666;
+}
+.footer-copyright p{
+    font-size: 15px;
+    color: #ccc;
+}
+.footer-copyright img {
+    margin-left: 10px;
+}
+.py-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pr-25 {
+    padding-right: 25px !important;
+}
+.pl-25 {
+    padding-left: 25px !important;
+}
+.intro-paragraph {
+    font-family: 'roboto',sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+}
+#assistance {
+    background-color: #f5f5f5;
+}
+.guide-assistance {
+    border-radius: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 47px 0 rgba(160,190,212,.22);
+    max-width: 1040px;
+    margin: auto;
+}
+.phone-wrap {
+    text-align: right;
+}
+.phone-number {
+    font-size: 45px;
+    letter-spacing: 1px;
+    color: #27d367;
+    font-weight: bold;
+}
+.photo-note {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    margin-top: 3px;
+    color: #525f7f;
+    font-weight: 300;
+    margin-right: 5px;
+}
+.mr-lg-40 {
+    margin-right: 40px !important;
+}
+footer .material-icons {
+    font-size: 22px;
+}
+.shadow {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15) !important;
+}
+.shadow:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15) !important;
 }

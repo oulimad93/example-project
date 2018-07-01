@@ -1,0 +1,16 @@
+<div class="bg-white clients-section">
+    <section class="container text-center">
+        <p class="h2 section-title" >Ils nous font confiance</p>
+        <p class="text-secondary mx-auto section-intro ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor lectus ac nunc tristique dignissim. Donec eros sem!</p>
+        <div class="row mt-50">
+            {{ range first 6 (where .Data.Pages "Params.type" "client") }}
+                <div class="col-lg-2 col-6 p-xs-20 client-logo">
+                    <img src="{{ .Params.Image }}" class="img-fluid" alt="{{ .Title }}">
+                </div>
+            {{ end }}
+        </div>
+        <div class="text-center">
+            <a href="https://ide-net.com/nos-references" class="button mt-55">Découvrez tous nos clients <i class="material-icons">keyboard_backspace</i></a>
+        </div>
+    </section>
+</div>
