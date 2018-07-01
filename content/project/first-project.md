@@ -1,5 +1,5 @@
 ---
-name: FooBar
+title: FooBar
 type: project
 image: /img/nature.jpg
 description: >-

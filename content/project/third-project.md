@@ -1,5 +1,5 @@
 ---
-name: L’engagement fait la force
+title: L’engagement fait la force
 type: project
 image: /img/nature.jpg
 description: L'engagement est au cœur de la performance des organisations.
