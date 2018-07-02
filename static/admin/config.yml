@@ -22,7 +22,6 @@ collections:
             name: "carousel_images"
             widget: "list"
             fields:
-              - {label: "Image", name: "image", widget: "image" }
               - {label: "Texte du slide", name: "text", widget: "text", required: false}
 
       - file: "content/contact/_index.md"
