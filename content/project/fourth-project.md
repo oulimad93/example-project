@@ -1,5 +1,6 @@
 ---
 title: Metiers du batiment
+type: project
 image: /img/nature2.jpg
 description: >+
   Maîtriser les horaires de travail de votre personnel (arrivées/départs, temps

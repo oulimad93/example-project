@@ -42,7 +42,7 @@
           </span>
           <div class="media-body ">
             <ul class="list-unstyled">
-              {{ range . }} <li>{{ .address }}</li> {{ end }}
+              {{ range . }} <li class="text-dark">{{ .address }}</li> {{ end }}
             </ul>
           </div>
         </div>
@@ -53,9 +53,9 @@
           </span>
           <div class="media-body ">
             <ul class="list-unstyled">
-              <li>{{ .Params.principal_phone }}</li>
+              <li class="text-dark">{{ .Params.principal_phone }}</li>
               {{ with .Params.phones }}
-                {{ range . }} <li>{{ .phone }}</li> {{ end }}
+                {{ range . }} <li class="text-dark">{{ .phone }}</li> {{ end }}
               {{ end }}
             </ul>
           </div>
@@ -67,7 +67,7 @@
           </span>
           <div class="media-body ">
             <ul class="list-unstyled">
-              {{ range . }} <li>{{ .email }}</li> {{ end }}
+              {{ range . }} <li class="text-dark">{{ .email }}</li> {{ end }}
             </ul>
           </div>
         </div>
@@ -77,7 +77,7 @@
   </div>
   <div class="col-md-4">
     <h4 class="text-primary">Rejoignez nous</h4>
-    <p class="">Restons en contact! Abonnez-vous à nos pages sur les réseaux sociaux</p>
+    <p class="text-dark">Restons en contact! Abonnez-vous à nos pages sur les réseaux sociaux</p>
 
     <ul class="social-list">
         <li>

@@ -1,5 +1,6 @@
 ---
 title: project number 1
+type: project
 image: /img/transport-de-personne-480x300.jpg
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit porro

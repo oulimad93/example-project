@@ -2,19 +2,18 @@
   <div class="container">
     <div class="row guide-assistance pl-25 pr-25">
       <div class="col-md-6 col-12">
-        <h4 class="text-primary assistance-title mb-lg-10 bold mb-xs-15">Demande d'assistance</h4>
-        <p class="big mb-0 text-secondary">
-          Nous sommes là pour vous aider. Si vous rencontrez des problèmes techniques, contactez notre service client          </p>
-        </div>
-        <div class="col-md-6 col-12 phone-wrap">
-          <h3 class="phone-number width-percent-100 mr-lg-40">
-            {{ with .Site.GetPage "section" "contact" }}
-            {{ .Params.principal_phone }}
-            {{ end }}
-            <span class="photo-note">Numéro accessible 5j/7 – 08:00 à 20:00</span>
-            </h3>
-
-          </div>
-        </div>
+      <h4 class="text-primary assistance-title mb-lg-10 bold mb-xs-15">Demande d'assistance</h4>
+      <p class="mb-0 text-secondary">
+        Nous sommes là pour vous aider. Si vous rencontrez des problèmes techniques, contactez notre service client          </p>
       </div>
-    </section>
+      <div class="col-md-6 col-12 phone-wrap">
+        <h3 class="phone-number width-percent-100 mr-lg-40">
+          {{ with .Site.GetPage "section" "contact" }}
+          {{ .Params.principal_phone }}
+          {{ end }}
+          <span class="photo-note">Numéro accessible 5j/7 – 08:00 à 20:00</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>

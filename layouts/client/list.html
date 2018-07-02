@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="py-70 border-bottom">
+  <section class="container">
+    <h1 class="text-center mb-3 text-primary">Nos Clients</h1>
+    <div class="text-center w-50 mx-auto text-secondary section-intro">
+      {{ with .Site.GetPage "section" "client" }}
+    {{ .Content }}
+    {{ end }}
+  </div>
+  </section>
+</div>
+<div class="py-70 white-bg">
+  <section class="container pr-5 pl-5">
+    <div class="row pr-5 pl-5">
+      {{ range first 6 (where .Data.Pages "Params.type" "client") }}
+          <div class="col-md-3 col-xs-6 p-xs-20 client-logo mb-5 mt-5">
+              <img src="{{ .Params.Image }}" class="img-fluid" alt="{{ .Title }}">
+          </div>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ partial "request" . }}
+{{ end }}

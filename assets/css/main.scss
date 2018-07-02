@@ -72,7 +72,10 @@ h1, h2, h3, h4, h5 {
 .no-decoration:hover {
   text-decoration: none
 }
-
+.project-card-img {
+    height:210px;
+    overflow: hidden
+}
 .card-text {
   height:100px;
 }
@@ -97,7 +100,7 @@ h4.card-title {
     width:60%;
 }
 .white-bg {
-    background-color: $white;
+    background-color: $white !important;
 }
 .section-title {
     color:$primary;
@@ -244,6 +247,10 @@ footer p {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 .pt-70 {
     padding-top: 70px;
 }
@@ -264,6 +271,9 @@ footer p {
 }
 #assistance {
     background-color: #f5f5f5;
+}
+#assistance p {
+    font-weight: 300;
 }
 .guide-assistance {
     border-radius: 14px;
@@ -307,4 +317,29 @@ footer .material-icons {
 }
 .contact-icons {
     margin-top: -1rem;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.navbar-brand {
+    position: absolute;
+    top: 5px;
+    margin-left: 20px;z-index: 3000;
+}
+.navbar-brand img {
+    vertical-align: top;
+    max-height: 70px;
+
+}
+.request {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }

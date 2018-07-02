@@ -25,6 +25,13 @@ collections:
               - {label: "Image", name: "image", widget: "image" }
               - {label: "Texte du slide", name: "text", widget: "text", required: false}
 
+      - file: "content/client/_index.md"
+        label: "Page d'accueil"
+        name: "home"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "En-tete", name: "body", widget: "text" }
+
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "Contact"
@@ -63,6 +70,7 @@ collections:
     delete: true
     fields:
       - { label: "Nom du projet", name: "title", widget: "string" }
+      - { label: "type", name: "type", widget: "hidden", default: "project" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "description", name: "description", widget: "text" }
       - { label: "Texte", name: "body", widget: "markdown" }
