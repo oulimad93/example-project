@@ -27,7 +27,7 @@ collections:
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "contact"
-        widget: "list"
+        widget: "object"
         fields:
           - label: "N Téléphone"
             name: "phones"
