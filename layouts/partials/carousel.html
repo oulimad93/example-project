@@ -7,7 +7,7 @@
   <div class="carousel-inner">
     {{ range $index, $img := .Params.carousel_images }}
       <div class="carousel-item {{ if (eq $index 0) }} active {{ end }}">
-        <div class="item-{{ $index }}" style="background: url('{{ $img }}') center no-repeat;"></div>
+        <div class="item-{{ $index }}" style="background: url('{{ .image }}') center no-repeat;"></div>
       </div>
     {{ end }}
   </div>
