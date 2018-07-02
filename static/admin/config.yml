@@ -29,8 +29,8 @@ collections:
         name: "Contact"
         widget: "list"
         fields:
+          - {label: "En-tete", name: "body", widget: "text"}
           - {label: "Telephone Principal", name: "principal_phone", widget: "string"}
-          - {label: "En-tete", name: "entete", widget: "text"}
           - label: "Telephone"
             name: "phones"
             widget: "list"
