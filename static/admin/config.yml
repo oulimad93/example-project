@@ -50,6 +50,11 @@ collections:
             delete: true
             field: { label: "Adresse", name: "address", widget: "string" }
 
+          - label: "En-tete"
+            name: "body"
+            widget: "text"
+            allow_add: false
+
   - name: "Projects"
     label: "Projets"
     label_singular: "Projet"
