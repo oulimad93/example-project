@@ -31,18 +31,21 @@ collections:
         fields:
           - label: "N Téléphone"
             name: "phones"
+            widget: "list"
             create: true,
             delete: true
             field: { label: "N Téléphone", name: "phone", widget: "string" }
 
           - label: "Emails"
             name: "emails"
+            widget: "list"
             create: true,
             delete: true
             field: { label: "Adresse Email", name: "email", widget: "string" }
 
           - label: "Adresses Postales"
             name: "adresses"
+            widget: "list"
             create: true,
             delete: true
             field: { label: "Adresse", name: "address", widget: "string" }
