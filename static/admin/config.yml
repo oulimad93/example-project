@@ -27,27 +27,20 @@ collections:
       - file: "content/contact/_index.md"
         label: "Contact"
         name: "contact"
-        widget: "object"
         fields:
           - label: "N Téléphone"
             name: "phones"
             widget: "list"
-            create: true,
-            delete: true
             field: { label: "N Téléphone", name: "phone", widget: "string" }
 
           - label: "Emails"
             name: "emails"
             widget: "list"
-            create: true,
-            delete: true
             field: { label: "Adresse Email", name: "email", widget: "string" }
 
           - label: "Adresses Postales"
             name: "addresses"
             widget: "list"
-            create: true,
-            delete: true
             field: { label: "Adresse", name: "address", widget: "string" }
 
           - label: "En-tete"
