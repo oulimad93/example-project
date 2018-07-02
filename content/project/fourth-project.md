@@ -1,7 +1,22 @@
 ---
-title: FooBar
-type: project
+title: Metiers du batiment
 image: /img/nature2.jpg
-description: >-
-  Some description over here
+description: >+
+  Maîtriser les horaires de travail de votre personnel (arrivées/départs, temps
+  passés,
+
+  Justifier les heures supplémentaires
 ---
+
+
+
+
+\    Maîtriser les horaires de travail de votre personnel (arrivées/départs, temps passés, …)
+
+\    Justifier les heures supplémentaires
+
+\    Maîtriser l’utilisation des engins de chantier (temps de fonctionnement, etc…)
+
+\    Optimiser les déplacements, les kilomètres parcourus
+
+\    Diminuer les autres coûts d’exploitation (carburant, communication)
