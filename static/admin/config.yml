@@ -14,6 +14,7 @@ collections:
       - file: "content/_index.md"
         label: "Page d'accueil"
         name: "home"
+        widget: list
         fields:
           - { label: "Intro", name: "body", widget: "markdown" }
           - { label: "Image intro", name: "intro_image", widget: "image" }
@@ -21,8 +22,8 @@ collections:
             name: "carousel_images"
             widget: "list"
             fields:
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Texte du slide", name: "text", widget: "text", required: false}
+              - {label: "Image", name: "image", widget: "image" }
+              - {label: "Texte du slide", name: "text", widget: "text", required: false}
 
       - file: "content/contact/_index.md"
         label: "Contact"
