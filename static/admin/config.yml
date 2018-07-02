@@ -30,20 +30,21 @@ collections:
         widget: "list"
         fields:
           - {label: "Telephone Principal", name: "principal_phone", widget: "string"}
+          - {label: "En-tete", name: "entete", widget: "text"}
           - label: "Telephone"
             name: "phones"
             widget: "list"
-            fields:
+            field:
               - {label: "Telephone", name: "phone", widget: "string"}
           - label: "Adresses"
             name: "addresses"
             widget: "list"
-            fields:
+            field:
               - {label: "Adresse", name: "address", widget: "string"}
           - label: "Emails"
             name: "emails"
             widget: "list"
-            fields:
+            field:
               - {label: "Email", name: "email", widget: "string"}
 
 
