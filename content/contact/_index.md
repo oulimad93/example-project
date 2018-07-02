@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 principal_phone: 0557 47 93 03
 phones:
@@ -10,4 +8,4 @@ emails:
   - email: contact@linkomweb.com
 ---
 N'hésitez pas à nous contacter pour toutes questions ou partenariat, nos équipes se tiennent à votre disposition afin de répondre à vos demandes!
->>>>>>> 1560ca8d31c4aafc898bfec6d2b84d2545ceee5e
+
