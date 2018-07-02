@@ -2,7 +2,7 @@
   <div class="py-5">
     <section class="container">
       <h1>{{ .Params.title }}</h1>
-      {{ if (len .Content) gt 1000 }}
+      {{ if (len .Content) gt 0 }}
         <div class="mb-4">
             {{ .Content | markdownify }}
         </div>
