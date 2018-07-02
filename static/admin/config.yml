@@ -34,17 +34,17 @@ collections:
           - label: "Telephone"
             name: "phones"
             widget: "list"
-            field:
+            fields:
               - {label: "Telephone", name: "phone", widget: "string"}
           - label: "Adresses"
             name: "addresses"
             widget: "list"
-            field:
+            fields:
               - {label: "Adresse", name: "address", widget: "string"}
           - label: "Emails"
             name: "emails"
             widget: "list"
-            field:
+            fields:
               - {label: "Email", name: "email", widget: "string"}
 
 
