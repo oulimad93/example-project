@@ -78,7 +78,7 @@ collections:
   - name: "client"
     label: "Clients"
     label_singular: "Client"
-    folder: "_clients"
+    folder: "content/_clients"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
