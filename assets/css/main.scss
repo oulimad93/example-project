@@ -102,7 +102,7 @@ h4.card-title {
 .section-title {
     color:$primary;
     font-family : "Didact Gothic", sans-serif;
-    font-size: 38px;
+    font-size: 45px;
     line-height: 45.6px;
     vertical-align: baseline;
     letter-spacing: normal;
@@ -304,4 +304,7 @@ footer .material-icons {
 }
 .shadow:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15) !important;
+}
+.contact-icons {
+    margin-top: -1rem;
 }

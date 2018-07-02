@@ -29,20 +29,26 @@ collections:
         name: "Contact"
         widget: "list"
         fields:
-          - {label: "En-tete", name: "body", widget: "text"}
-          - {label: "Telephone Principal", name: "principal_phone", widget: "string"}
+          - {label: "En-tete", name: "body", widget: "text", required: true}
+          - {label: "Telephone Principal", name: "principal_phone", widget: "string", required: true}
           - label: "Telephone"
             name: "phones"
+            create: true,
+            delete: true
             widget: "list"
             fields:
               - {label: "Telephone", name: "phone", widget: "string"}
           - label: "Adresses"
             name: "addresses"
+            create: true,
+            delete: true
             widget: "list"
             fields:
               - {label: "Adresse", name: "address", widget: "string"}
           - label: "Emails"
             name: "emails"
+            create: true,
+            delete: true
             widget: "list"
             fields:
               - {label: "Email", name: "email", widget: "string"}

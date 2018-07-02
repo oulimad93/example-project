@@ -9,41 +9,43 @@
   <section class="container">
     <div class="row">
       <div class="col">
-        {{ with .Params.phones }}
+
         <div class="media align-items-center mb-5">
-            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3 contact-icons">
               <i class="material-icons align-middle">phone</i>
             </span>
             <div class="media-body">
               <p class="text-secondary mb-1">Appelez-nous au</p>
               <ul class="list-unstyled">
-                {{ range . }} <li>{{ . }}</li> {{ end }}
+                <li>{{ .Params.principal_phone }}</li>
+                {{ with .Params.phones }}
+                  {{ range . }} <li>{{ .phone }}</li> {{ end }}
+                {{ end }}
               </ul>
             </div>
           </div>
-        {{ end }}
         {{ with .Params.emails }}
         <div class="media align-items-center mb-5">
-            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3 contact-icons">
               <i class="material-icons align-middle">email</i>
             </span>
             <div class="media-body">
               <p class="text-secondary mb-1">Adresse Email</p>
               <ul class="list-unstyled">
-                {{ range . }} <li>{{ . }}</li> {{ end }}
+                {{ range . }} <li>{{ .email }}</li> {{ end }}
               </ul>
             </div>
           </div>
         {{ end }}
         {{ with .Params.addresses }}
         <div class="media align-items-center mb-5">
-            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
+            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3  contact-icons">
               <i class="material-icons align-middle">map</i>
             </span>
             <div class="media-body">
               <p class="text-secondary mb-1">Visitez nous</p>
               <ul class="list-unstyled">
-                {{ range . }} <li>{{ . }}</li> {{ end }}
+                {{ range . }} <li>{{ .address }}</li> {{ end }}
               </ul>
             </div>
           </div>

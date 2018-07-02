@@ -36,40 +36,41 @@
       </li>
     </ul> -->
         {{ with .Params.addresses }}
-        <div class="media align-items-center mb-0">
-            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
-              <i class="material-icons align-middle">location_on</i>
-            </span>
-            <div class="media-body mt-3">
-              <ul class="list-unstyled">
-                {{ range . }} <li>{{ . }}</li> {{ end }}
-              </ul>
-            </div>
+        <div class="media align-items-center mb-3">
+          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3 contact-icons">
+            <i class="material-icons align-middle" >location_on</i>
+          </span>
+          <div class="media-body ">
+            <ul class="list-unstyled">
+              {{ range . }} <li>{{ .address }}</li> {{ end }}
+            </ul>
           </div>
+        </div>
         {{ end }}
-        {{ with .Params.phones }}
-        <div class="media align-items-center mb-0">
-            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
-              <i class="material-icons align-middle">phone</i>
-            </span>
-            <div class="media-body mt-3">
-              <ul class="list-unstyled">
-                {{ range . }} <li>{{ . }}</li> {{ end }}
-              </ul>
-            </div>
+        <div class="media align-items-center mb-3">
+          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3 contact-icons">
+            <i class="material-icons align-middle">phone</i>
+          </span>
+          <div class="media-body ">
+            <ul class="list-unstyled">
+              <li>{{ .Params.principal_phone }}</li>
+              {{ with .Params.phones }}
+                {{ range . }} <li>{{ .phone }}</li> {{ end }}
+              {{ end }}
+            </ul>
           </div>
-        {{ end }}
+        </div>
         {{ with .Params.emails }}
-        <div class="media align-items-center mb-0">
-            <span class="d-block bg-primary rounded-circle p-2 text-light mr-3">
-              <i class="material-icons align-middle">email</i>
-            </span>
-            <div class="media-body mt-3">
-              <ul class="list-unstyled">
-                {{ range . }} <li>{{ . }}</li> {{ end }}
-              </ul>
-            </div>
+        <div class="media align-items-center mb-3">
+          <span class="d-block bg-primary rounded-circle p-2 text-light mr-3 contact-icons">
+            <i class="material-icons align-middle">email</i>
+          </span>
+          <div class="media-body ">
+            <ul class="list-unstyled">
+              {{ range . }} <li>{{ .email }}</li> {{ end }}
+            </ul>
           </div>
+        </div>
         {{ end }}
     {{ end }}
 
