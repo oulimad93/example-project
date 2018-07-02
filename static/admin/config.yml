@@ -29,13 +29,23 @@ collections:
         name: "Contact"
         widget: "list"
         fields:
-          - {label: "Quote", name: "quote", widget: "string"}
-          - label: "Author"
-            name: "author"
+          - {label: "Telephone Principal", name: "principal_phone", widget: "string"}
+          - label: "Telephone"
+            name: "phones"
             widget: "list"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "email", name: "email", widget: "string"}
+              - {label: "Telephone", name: "phone", widget: "string"}
+          - label: "Adresses"
+            name: "addresses"
+            widget: "list"
+            fields:
+              - {label: "Adresse", name: "address", widget: "string"}
+          - label: "Emails"
+            name: "emails"
+            widget: "list"
+            fields:
+              - {label: "Email", name: "email", widget: "string"}
+
 
   - name: "Projects"
     label: "Projets"
