@@ -19,37 +19,23 @@ collections:
           - { label: "Image intro", name: "intro_image", widget: "image" }
           - label: "Images slider"
             name: "carousel_images"
-            widget: "object"
+            widget: "list"
             fields:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Texte du slide", name: "text", widget: "text", required: false}
 
       - file: "content/contact/_index.md"
-        label: "Contact"
-        name: "contact"
-        fields:
-          - label: "N Téléphone"
-            name: "phones"
+          - label: "Gallery"
+            name: "galleryImages"
             widget: "list"
-            field:
-              - { label: "N Téléphone", name: "phone", widget: "string" }
-
-          - label: "Emails"
-            name: "emails"
-            widget: "list"
-            field:
-              - { label: "Adresse Email", name: "email", widget: "string" }
-
-          - label: "Adresses Postales"
-            name: "addresses"
-            widget: "list"
-            field:
-              - { label: "Adresse", name: "address", widget: "string" }
-
-          - label: "En-tete"
-            name: "body"
-            widget: "text"
-            allow_add: false
+            fields:
+              - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+              - label: Author
+                name: author
+                widget: list
+                fields:
+                  - {label: Name, name: name, widget: string, default: "Emmet"}
+                  - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
 
   - name: "Projects"
     label: "Projets"
