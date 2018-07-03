@@ -2,6 +2,7 @@
 principal_phone: 0557 47 93 03
 phones:
   - phone: 0557 47 93 04
+  - phone: 0555 26 97 26
 addresses:
   - address: '10 Rue Harouni Bouziane, Oran'
 emails:
