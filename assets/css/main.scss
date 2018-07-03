@@ -74,7 +74,9 @@ h1, h2, h3, h4, h5 {
 }
 .project-card-img {
     height:210px;
-    overflow: hidden
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
 }
 .card-text {
   height:100px;
@@ -92,6 +94,7 @@ p.card-text {
 h4.card-title {
 
 }
+
 .section-intro {
     font-family: 'roboto',sans-serif;
     font-size: 17px;
