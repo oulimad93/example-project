@@ -93,6 +93,7 @@ collections:
     create: true,
     delete: true
     widget: "list"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}-{{slug}}"
     fields:
       - {label: "Nom du Pack", name: "title", widget: "string", required: true}
       - {label: "type", name: "type", widget: "hidden", default: "pack"}
