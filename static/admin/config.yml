@@ -4,12 +4,11 @@ backend:
 media_folder: "/static/img"
 public_folder: "/img"
 
-editor:
-  preview: false
-
 collections:
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
       - file: "content/_index.md"
         label: "Page d'accueil"
@@ -64,6 +63,8 @@ collections:
 
   - name: "Projects"
     label: "Projets"
+    editor:
+      preview: false
     label_singular: "Projet"
     folder: "content/project"
     create: true,
@@ -89,6 +90,8 @@ collections:
 
   - name: "client"
     label: "Clients"
+    editor:
+      preview: false
     label_singular: "Client"
     folder: "content/clients"
     create: true,
@@ -100,6 +103,8 @@ collections:
 
   - name: "pack"
     label: "Packs"
+    editor:
+      preview: false
     label_singular: "Pack"
     folder: "content/pack"
     create: true,
