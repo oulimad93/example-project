@@ -4,14 +4,13 @@
     <p class="mx-auto section-intro">
       IDE-NET Géolocalisation vous propose plusieurs packs, , afin de répondre aux attentes spécifiques de chacun.          </p>
       <div class="row mt-50">
-      {{ range (where .Site.Pages "Params.type" "pack").ByDate.Reverse }}
+      {{ range (where .Data.Pages "Params.type" "pack")  }}
           <div class="col-lg-3 col-xs-12">
             <div class="pack-card pack-wrapper shadow">
              <h3 class="pack-heading text-center text-primary text-capitalize">{{ .Params.title }}</h3>
              <div class="separation"></div>
              <div class="pack-desc big text-center">
               <p> {{ .Params.description }} </p>
-
             </div>
             <a href="https://ide-net.com/contact" class="button mt-10 bg-info"> Cammander <i class="material-icons">keyboard_backspace</i> </a>
             <ul class="pack-features">
