@@ -449,3 +449,102 @@ footer .material-icons {
     font-size: 16px;
     font-weight: 300;
 }
+/* Sidebar */
+.c-article-side_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1.2vw 1.4vw 1.2vw!important;
+    margin-left: 25px;
+}
+@media (min-width: 700px) and (max-width: 1199px) {
+    .c-article-side_list {
+        margin-left: -7.5rem;
+        letter-spacing: normal;
+        font-size: 0;
+    }
+}
+
+@media (max-width: 699px) {
+    .c-article-side_item {
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+    .c-article-side_item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    .c-article-side_item {
+        display: inline-block;
+        padding-left: 7.5rem;
+        width: 100%;
+        vertical-align: top;
+        font-size: 1rem;
+        width: 50%;
+    }
+}
+
+.c-article-side_item {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    padding-left: 40px;
+}
+.c-article-side_list .c-article-side_item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.c-article-side_list .c-article-side_item:last-child p +p {
+    margin-bottom: 0;
+}
+li.c-article-side_item i {
+    position: absolute;
+    background: #255289;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    left: 0;
+    top: 8px;
+}
+.c-article-side_title {
+    margin-bottom: 5px;
+    font-size: 0.675rem;
+    letter-spacing: 0.12em;
+    color: #255289;
+}
+.c-article-side_item p +p {
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.c-article-side-button.card{
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 25px!important;
+    padding: 1.7vw 1.4vw 1.7vw 60px!important;
+    font-size: 16px;
+    color: #f00;
+    padding-left: 40px;
+}
+.c-article-side-button.card i {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    text-align: center;
+    color: #f00;
+    left: 20px;
+}
+/* */

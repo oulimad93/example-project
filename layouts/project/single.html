@@ -1,12 +1,91 @@
 {{ define "main" }}
-  <div class="py-5">
-    <section class="container">
-      <h1>{{ .Params.title }}</h1>
-      {{ if (len .Content) gt 0 }}
-        <div class="mb-4">
-            {{ .Content | markdownify }}
+  <div class="bg-white clients-section border-top">
+    <section class="container text-center">
+        <p class="h2 section-title" >{{ .Title }}</p>
+        <p class="text-secondary mx-auto section-intro mt-5">{{ .Params.description }}</p>
+        <div class="row mt-50">
+          {{ with .Params.images }}
+                {{ range . }}
+                <div class="col-md-3 img-single">
+                <img src="{{ .image }}" class="img-fluid" alt="{{ .image_title }}" style="border-radius: 4px;">
+                </div>
+                {{ end }}
+          {{ end }}
         </div>
-      {{ end }}
+        <div class="row mt-5">
+        <div class="col-lg-8 text-left mt-50 font-weight-normal text-secondary "> {{ .Content }}</div>
+        <div class="col-lg-4 p-xs-0 c-article-side details__column mt-4">
+            <ul class="c-article-side_list card wow zoomIn animated shadow" style="visibility: visible; animation-name: zoomIn;">
+              <li class="c-article-side_item">
+                <i class="material-icons">label</i>
+                <p class="c-article-side_title text-uppercase main-color">Phase</p>
+                <p>{{ .Params.phase }}</p>
+              </li>
+              <li class="c-article-side_item">
+                <i class="material-icons">event_available</i>
+                <p class="c-article-side_title text-uppercase main-color">Date de livraison</p>
+                <p>{{ .Params.date_livraison }}</p>
+              </li>
+              <li class="c-article-side_item">
+                <i class="material-icons">calendar_today</i>
+                <p class="c-article-side_title text-uppercase main-color">Délai</p>
+                <p>{{ .Params.delai }}</p>
+              </li>
+              <li class="c-article-side_item">
+                <i class="material-icons">view_module</i>
+                <p class="c-article-side_title text-uppercase main-color">Nombre de logements</p>
+                <p>{{ .Params.nombre_logement }}<p>
+              </li>
+              <li class="c-article-side_item">
+                <i class="material-icons">call_made</i>
+                <p class="c-article-side_title text-uppercase main-color">Etat d'avancement</p>
+                <p>{{ .Params.etat_avancement }}%</p>
+              </li>
+
+            </ul>
+        </div>
+      </div>
+
     </section>
+</div>
+<div class="py-70 border-top">
+  <section class="container mb-3">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <h2 class="section-title mb-3">Other Projects</h2>
+      </div>
+      <div class="col text-right">
+        <button class="btn btn-light shadow btn-arrow rounded-circle mr-2" id="project-prev">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <button class="btn btn-light shadow btn-arrow rounded-circle" id="project-next">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid" id="projects-slider">
+    {{ range where .Site.Pages "Params.type" "project" }}
+      <div class="px-4 py-5">
+        <article class="card border-0 shadow">
+          <!-- {{ $name := .Params.image }}
+          {{ $imgs := .Site.GetPage "section" "images" }}
+          {{ $imgs := $imgs.Resources.Match $name }}
+          {{ range $index, $el := $imgs }}
+          {{ $resized := $el.Resize "300x" }}-->
+          <!-- {{ end }} -->
+          <div class="project-card-img">
+            <img src="{{ .Params.image }}" alt="" class="card-img-top">
+          </div>
+          <div class="card-body p-4">
+            <h4 class="card-title text-primary text-capitalize">{{ .Params.title }}</h4>
+            <p class="card-text text-secondary" >{{ .Params.description }}</p>
+            <a href="{{ .Permalink }}" class="text-primary">En savoir plus &raquo;</a>
+          </div>
+        </article>
+      </div>
+    {{ end }}
   </div>
+</div>
+
 {{ end }}

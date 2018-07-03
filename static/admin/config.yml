@@ -72,7 +72,19 @@ collections:
       - { label: "Nom du projet", name: "title", widget: "string" }
       - { label: "type", name: "type", widget: "hidden", default: "project" }
       - { label: "Image", name: "image", widget: "image" }
+      - { label: "Phase", name: "phase", widget: "string" }
+      - { label: "Date de Livraison", name: "date_livraison", widget: "string" }
+      - { label: "Delai", name: "Delai", widget: "string" }
+      - { label: "Nombre de Logements", name: "nonmbre_logement", widget: "string" }
+      - { label: "Etat d'avancement", name: "etat_avancement", widget: "string" }
       - { label: "description", name: "description", widget: "text" }
+      - label: "Images Additionnelles"
+        name: "images"
+        create: true,
+        delete: true
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "string"}
       - { label: "Texte", name: "body", widget: "markdown" }
 
   - name: "client"
