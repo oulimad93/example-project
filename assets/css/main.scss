@@ -343,3 +343,109 @@ footer .material-icons {
     justify-content: center;
     width: 100%;
 }
+/* Packs */
+.pack-wrapper {
+    border: 1px solid #f2f4f6!important;
+}
+.pack-wrapper .separation {
+    background-color: #003d64;
+    height: 4px;
+    width: 50px;
+    margin: 15px auto 22px;
+}
+.pack-wrapper .pack-disc {
+    text-align: center;
+    line-height: 1.8;
+}
+.pack-wrapper .button {
+    margin: 0 auto;
+    max-width: 180px;
+    padding-right: 28px!important;
+    padding-left: 28px!important;
+    margin-top: 5px;
+}
+.pack-wrapper:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 6px solid #4365a5;
+    border-radius: 0 0 6px 6px;
+}
+#packages .row .col-lg-3:nth-child(2) .pack-wrapper:after {
+    border-top: 6px solid #0086d3;
+}
+#packages .row .col-lg-3:nth-child(3) .pack-wrapper:after {
+    border-top: 6px solid #ed5b23;
+}
+#packages .row .col-lg-3:nth-child(4) .pack-wrapper:after {
+    border-top: 6px solid #e78c6a;
+}
+.pack-features {
+    margin-top: 30px;
+    padding-left: 15px;
+}
+.pack-features li {
+    padding: 4px 0;
+    list-style: none;
+    position: relative;
+    padding-right: 10%;
+    text-align: left;
+}
+.pack-features li::before {
+    content: "";
+    display: inline-block;
+    margin: 0 7px 0 -18px;
+    width: 11px;
+    height: 10px;
+    background-image: url(/img/check-list-blue.svg);
+    background-repeat: no-repeat;
+}
+.pack-feature-tooltip {
+    margin-left: auto;
+    position: relative;
+}
+.feature-tooltip {
+    position: absolute;
+    right: -5px;
+    top: 4px;
+}
+.feature-tooltip > img {
+    width: 14px;
+    height: 14px;
+}
+.tooltip {
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.tooltip-inner {
+    max-width: 240px;
+    padding: 15px;
+    background-color:rgba(0,0,0,.9);
+    border-radius: 8px;
+}
+.pack-card {
+    position: relative;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #fff;
+    padding-top: 2.8vw !important;
+    padding-right: 1.6vw !important;
+    padding-bottom: 2.3vw !important;
+    padding-left: 1.6vw !important;
+    margin-bottom: 0 !important;
+    box-shadow: 0 4px 47px 0 rgba(160,190,212,.22);
+    border-radius: 10px;
+    border: none;
+    min-height: 500px;
+    height: 100%;
+    transition: .3s;
+    overflow: hidden;
+}
+.pack-desc {
+    height:120px;
+    font-size: 16px;
+    font-weight: 300;
+}

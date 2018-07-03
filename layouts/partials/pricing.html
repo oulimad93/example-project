@@ -1,0 +1,164 @@
+<section class="white-bg pt-70 pb-70 border-top" id="packages">
+  <div class="container text-center p-0">
+    <h4 class="heading md-heading section-title">Nos Packs</h4>
+    <p class="mx-auto section-intro">
+      IDE-NET Géolocalisation vous propose plusieurs packs, , afin de répondre aux attentes spécifiques de chacun.          </p>
+      <div class="row mt-50">
+      {{ range (where .Site.Pages "Params.type" "pack").ByDate.Reverse }}
+          <div class="col-lg-3 col-xs-12">
+            <div class="pack-card pack-wrapper shadow">
+             <h3 class="pack-heading text-center text-primary text-capitalize">{{ .Params.title }}</h3>
+             <div class="separation"></div>
+             <div class="pack-desc big text-center">
+              <p> {{ .Params.description }} </p>
+
+            </div>
+            <a href="https://ide-net.com/contact" class="button mt-10 bg-info"> Cammander <i class="material-icons">keyboard_backspace</i> </a>
+            <ul class="pack-features">
+              {{ with .Params.features }}
+                {{ range . }} <li class="text-dark">{{ .feature }}</li> {{ end }}
+              {{ end }}
+            </ul>
+            </div>
+          </div>
+        {{ end}}
+          <!--
+
+          <div class="col-lg-3">
+            <div class="pack-card pack-wrapper">
+             <h3 class="pack-heading text-center">Pack Standard</h3>
+             <div class="separation"></div>
+             <div class="pack-desc big text-center">
+              <p>Justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata, lorem ipsum.</p>
+
+            </div>
+            <a href="https://ide-net.com/contact" class="button mt-10 bg-info"> Cammander <i class="material-icons">keyboard_backspace</i> </a>
+            <ul class="pack-features">                <li>Organisation en Temps Réel de la Flotte                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Justo duo dolores et ea rebum. Stet clita kasd.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Planification et Optimisation
+                </li>
+                <li>Messagerie Assiste                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Justo duo dolores et ea rebum. Stet gubergren, no sea takimata.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Navigation Gps
+                </li>
+                <li>Vitesse Moyenne
+                </li>
+                <li>Niveau du Reservoir                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Consommation Carburant                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Justo duo dolores et ea rebum.gubergren, no sea takimata.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+
+                                  </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="pack-card pack-wrapper">
+             <h3 class="pack-heading text-center">Pack Pro</h3>
+             <div class="separation"></div>
+             <div class="pack-desc big text-center">
+              <p>Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+
+            </div>
+            <a href="https://ide-net.com/contact" class="button mt-10 bg-info"> Cammander <i class="material-icons">keyboard_backspace</i> </a>
+            <ul class="pack-features">                <li>Organisation en Temps Réel de la Flotte                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Planification et Optimisation                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Messagerie Assiste
+                </li>
+                <li>Navigation Gps
+                </li>
+                <li>Vitesse Moyenne
+                </li>
+                <li>Niveau du Reservoir                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Consommation Carburant Niveau du reservoir                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Sed diam nonumy eirmod tempor invidunt ut labore.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Distance Kilometrique                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+
+                                  </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="pack-card pack-wrapper">
+             <h3 class="pack-heading text-center">Pack Entreprise</h3>
+             <div class="separation"></div>
+             <div class="pack-desc big text-center">
+              <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+
+            </div>
+            <a href="https://ide-net.com/contact" class="button mt-10 bg-info"> Cammander <i class="material-icons">keyboard_backspace</i> </a>
+            <ul class="pack-features">                <li>Organisation en Temps Réel de la Flotte                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Planification et Optimisation                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Messagerie Assiste
+                </li>
+                <li>Navigation Gps
+                </li>
+                <li>Vitesse Moyenne                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Consetetur sadipscing elitr, sed diam nonumy.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Température Moteur                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+                <li>Distance Kilometrique
+                </li>
+                <li>Niveau du Reservoir
+                </li>
+                <li>Consommation Carburant
+                </li>
+                <li>Régime Moteur                                            <span class="feature-tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.">
+                    <img src="https://ide-net.com/wp-content/themes/idenet/images/icons/information.svg" alt="">
+                  </span>
+
+                </li>
+
+                                  </ul>
+            </div>
+          </div> -->
+
+
+      </div>
+    </div>
+  </section>

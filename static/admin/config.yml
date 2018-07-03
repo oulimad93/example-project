@@ -79,9 +79,29 @@ collections:
     label: "Clients"
     label_singular: "Client"
     folder: "content/clients"
-    create: true
+    create: true,
+    delete: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Type", name: "type", widget: "hidden", default: "client"}
+
+  - name: "pack"
+    label: "Packs"
+    label_singular: "Pack"
+    folder: "content/pack"
+    create: true,
+    delete: true
+    widget: "list"
+    fields:
+      - {label: "Nom du Pack", name: "title", widget: "string", required: true}
+      - {label: "type", name: "type", widget: "hidden", default: "pack"}
+      - {label: "Breve Description", name: "description", widget: "text", required: true}
+      - label: "Caracteristiques"
+        name: "features"
+        create: true,
+        delete: true
+        widget: "list"
+        fields:
+          - {label: "Caracteristique", name: "feature", widget: "string"}
 

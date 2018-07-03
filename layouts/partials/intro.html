@@ -2,9 +2,9 @@
   <section class="container">
     <div class="row">
       <div class="col-md-6">
-        <p class="h2 section-title">À Propos de {{ $.Site.Title }}</p>
+        <p class="h2 section-title mt-3 mb-5">À Propos de {{ $.Site.Title }}</p>
         <div class="text-secondary intro-paragraph">{{ .Content | markdownify }}</div>
-        <a href="/about" class="button mt-55">En Savoir Plus &raquo;</i></a>
+        <!-- <a href="/about" class="button mt-55">En Savoir Plus &raquo;</i></a> -->
       </div>
       <div class="col-md-6 p-4">
         <img src="{{ .Params.intro_image }}" alt="" class="img-fluid rounded shadow-sm">

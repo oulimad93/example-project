@@ -3,16 +3,14 @@
   <section class="container">
     <h1 class="text-center mb-3 text-primary">Nos Clients</h1>
     <div class="text-center w-50 mx-auto text-secondary section-intro">
-      {{ with .Site.GetPage "section" "clients" }}
-    {{ .Content }}
-    {{ end }}
+      Nous travaillons avec plusieurs entreprises dispercés sur toute la surface du globe, ce qui fait de notre entreprise, un des leader du marché
   </div>
   </section>
 </div>
 <div class="py-70 white-bg">
-  <section class="container pr-5 pl-5">
+  <section class="container pr-5 pl-5 text-center">
     <div class="row pr-5 pl-5">
-      {{ range first 6 (where .Site.Pages "Params.type" "client") }}
+      {{ range where .Site.Pages "Params.type" "client" }}
           <div class="col-md-3 col-xs-6 p-xs-20 client-logo mb-5 mt-5">
               <img src="{{ .Params.Image }}" class="img-fluid" alt="{{ .Title }}">
           </div>
